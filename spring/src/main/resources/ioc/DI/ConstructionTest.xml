@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 第一种方式:根据索引 -->
+    <bean id="person1" class="dge1992.spring.bean.Person">
+        <constructor-arg index="0" value="dong"/>
+        <constructor-arg index="1" value="12"/>
+        <constructor-arg index="2" value="true"/>
+    </bean>
+
+    <!-- 第二种方式:根据所属类型传值 -->
+    <bean id="person2" class="dge1992.spring.bean.Person">
+        <constructor-arg type="java.lang.String" value="fen"/>
+        <constructor-arg type="java.lang.Integer" value="28"/>
+        <constructor-arg type="boolean" value="false"/>
+    </bean>
+
+    <!-- 第三种方式:根据参数名 -->
+    <bean id="person3" class="dge1992.spring.bean.Person">
+        <constructor-arg name="name" value="yan"/>
+        <constructor-arg name="age" value="-1"/>
+        <constructor-arg name="sex" value="false"/>
+    </bean>
+
+    <!-- 第四种方式:根据构造方法顺序 -->
+    <bean id="person4" class="dge1992.spring.bean.Person">
+        <constructor-arg value="成德善"/>
+        <constructor-arg value="100"/>
+        <constructor-arg value="false"/>
+    </bean>
+
+</beans>
