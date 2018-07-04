@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.Person">
+        <property name="cat" ref="cat"></property>
+    </bean>
+
+    <bean id="cat" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.CatStaticFactory" factory-method="getInstance"></bean>
+
+    <bean id="person2" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.Person">
+        <property name="dog" ref="dog"></property>
+    </bean>
+
+    <bean id="dog" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.DogStaticFactory" factory-method="getInstance1">
+        <property name="name" value="旺财"></property>
+    </bean>
+
+    <bean id="person3" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.Person">
+        <property name="pig" ref="pig"></property>
+    </bean>
+
+    <bean id="pigFactory" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.PigStaticFactory"/>
+
+    <bean id="pig" factory-bean="pigFactory" factory-method="getInstance1"></bean>
+
+    <bean id="person4" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.Person">
+        <property name="localDate">
+            <ref bean="nextDayDate"/>
+        </property>
+    </bean>
+
+    <bean id="nextDayDate" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.NextDayDateFactoryBean"/>
+
+</beans>

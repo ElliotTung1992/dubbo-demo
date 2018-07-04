@@ -26,7 +26,7 @@
 
     <!-- 第四种方式:根据构造方法顺序 -->
     <bean id="person4" class="dge1992.spring.bean.Person">
-        <constructor-arg value="王晓明"/>
+        <constructor-arg value="成德善"/>
         <constructor-arg value="100"/>
         <constructor-arg value="false"/>
     </bean>
