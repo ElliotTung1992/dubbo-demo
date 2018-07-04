@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="propertyConfigurer"  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>ioc/beanFactory/second/beanFactoryPostProcessor/student.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.PropertyOverrideConfigurer">
+        <property name="location" value="ioc/beanFactory/second/beanFactoryPostProcessor/student1.properties"/>
+    </bean>
+
+    <bean id="student" class="dge1992.spring.ioc.beanFactory.second.beanFactoryPostProcessor.Student">
+        <property name="name">
+            <value>${zhangsan.name}</value>
+        </property>
+        <property name="age">
+            <value>${zhangsan.age}</value>
+        </property>
+    </bean>
+
+    <bean id="dateFoo" class="dge1992.spring.ioc.beanFactory.second.beanFactoryPostProcessor.DateFoo">
+        <property name="date">
+            <value>2018-09-08</value>
+        </property>
+    </bean>
+
+</beans>

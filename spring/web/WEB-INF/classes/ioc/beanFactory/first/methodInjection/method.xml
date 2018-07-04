@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 偷梁换柱 -->
+    <bean id="person5" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.Person">
+        <property name="cat" ref="cat"></property>
+    </bean>
+
+    <bean id="cat" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.Cat" scope="prototype"></bean>
+
+    <!-- 方法注入 -->
+    <bean id="person6" class="dge1992.spring.ioc.beanFactory.first.factoryMethod.Person">
+        <lookup-method name="getCat" bean="cat"></lookup-method>
+    </bean>
+
+    <!-- 殊途同归 -->
+    <bean id="person7" class="dge1992.spring.ioc.beanFactory.first.methodInjection.Person">
+        <property name="cat" ref="cat1"></property>
+    </bean>
+
+    <bean id="cat1" class="dge1992.spring.ioc.beanFactory.first.methodInjection.Cat" scope="prototype"></bean>
+
+    <!-- 殊途同归 方式二 -->
+    <bean id="dog" class="dge1992.spring.ioc.beanFactory.first.methodInjection.Dog" scope="prototype"></bean>
+
+    <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
+        <property name="targetBeanName">
+            <idref bean="dog"/>
+        </property>
+    </bean>
+
+    <bean id="people" class="dge1992.spring.ioc.beanFactory.first.methodInjection.People">
+        <property name="factory">
+            <ref bean="objectFactory"/>
+        </property>
+    </bean>
+
+
+</beans>
