@@ -3,15 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="person1" class="dge1992.spring.bean.Person" >
+    <bean id="person1" class="dge1992.spring.ioc.beanFactory.bean.Person" >
         <property name="car" ref="car"></property>
         <property name="dog" ref="dog"></property>
     </bean>
-    <bean id="person2" class="dge1992.spring.bean.Person" >
+    <bean id="person2" class="dge1992.spring.ioc.beanFactory.bean.Person" >
         <property name="car" ref="car"></property>
         <property name="dog" ref="dog"></property>
     </bean>
 
-    <bean id="car" class="dge1992.spring.bean.Car" scope="singleton"></bean>
-    <bean id="dog" class="dge1992.spring.bean.Dog" scope="prototype"></bean>
+    <bean id="car" class="dge1992.spring.ioc.beanFactory.bean.Car" scope="singleton"></bean>
+    <bean id="dog" class="dge1992.spring.ioc.beanFactory.bean.Dog" scope="prototype"></bean>
 </beans>

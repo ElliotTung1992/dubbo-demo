@@ -1,6 +1,6 @@
 package dge1992.spring.ioc.DI;
 
-import dge1992.spring.bean.Person;
+import dge1992.spring.ioc.beanFactory.bean.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,6 +1,6 @@
 package dge1992.spring.ioc.beanFactory.first;
 
-import dge1992.spring.bean.Person;
+import dge1992.spring.ioc.beanFactory.bean.Person;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;

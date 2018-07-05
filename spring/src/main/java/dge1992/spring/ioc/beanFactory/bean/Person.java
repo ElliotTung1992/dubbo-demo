@@ -1,4 +1,4 @@
-package dge1992.spring.bean;
+package dge1992.spring.ioc.beanFactory.bean;
 
 import java.util.Arrays;
 import java.util.List;

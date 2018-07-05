@@ -1,8 +1,8 @@
 package dge1992.spring.ioc.beanFactory.first;
 
-import dge1992.spring.bean.Car;
-import dge1992.spring.bean.Dog;
-import dge1992.spring.bean.Person;
+import dge1992.spring.ioc.beanFactory.bean.Car;
+import dge1992.spring.ioc.beanFactory.bean.Dog;
+import dge1992.spring.ioc.beanFactory.bean.Person;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.PropertyValue;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
