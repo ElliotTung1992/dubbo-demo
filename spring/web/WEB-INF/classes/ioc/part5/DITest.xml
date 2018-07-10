@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cat" class="com.dge1992.spring.ioc.part5.Cat">
+        <constructor-arg name="name" value="小花"/>
+    </bean>
+
+    <bean id="dog" class="com.dge1992.spring.ioc.part5.Dog">
+        <property name="name" value="旺财"/>
+    </bean>
+</beans>

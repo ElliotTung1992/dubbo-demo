@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="pig1" class="com.dge1992.spring.ioc.part8.Pig" autowire="byType"/>
+
+    <bean id="ear" class="com.dge1992.spring.ioc.part8.Ear">
+        <property name="name" value="耳朵"/>
+    </bean>
+
+    <bean id="pig2" class="com.dge1992.spring.ioc.part8.Pig" autowire="byName"/>
+
+    <bean id="eyeName" class="com.dge1992.spring.ioc.part8.Eye">
+        <property name="name" value="眼睛"/>
+    </bean>
+
+    <bean id="pig3" class="com.dge1992.spring.ioc.part8.Pig" autowire="constructor"/>
+
+    <bean id="mouse" class="com.dge1992.spring.ioc.part8.Mouse">
+        <property name="name" value="嘴巴"/>
+    </bean>
+
+</beans>

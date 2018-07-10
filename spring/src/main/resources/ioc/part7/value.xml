@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="valueDemo" class="com.dge1992.spring.ioc.part7.ValueDemo">
+        <property name="value" value="value"/>
+        <property name="refDemo" ref="refDemo"/>
+        <property name="beanDemo">
+            <bean class="com.dge1992.spring.ioc.part7.BeanDemo">
+                <property name="name" value="BeanDemo"/>
+            </bean>
+        </property>
+        <property name="isNull">
+            <null/>
+        </property>
+        <property name="names">
+            <list>
+                <value>小红</value>
+                <value>小黄</value>
+            </list>
+        </property>
+        <property name="ages">
+            <set>
+                <value>12</value>
+                <value>11</value>
+                <value>13</value>
+            </set>
+        </property>
+        <property name="maps">
+            <map>
+                <entry key="name">
+                    <value>小白</value>
+                </entry>
+                <entry key="age">
+                    <value>12</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="refDemo" class="com.dge1992.spring.ioc.part7.RefDemo">
+        <property name="name" value="refDemo"/>
+    </bean>
+
+</beans>

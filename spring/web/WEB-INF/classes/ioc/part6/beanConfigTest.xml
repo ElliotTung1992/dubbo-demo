@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 静态工厂方法 -->
+    <bean id="fruitStore1" class="com.dge1992.spring.ioc.part6.FruitStore">
+        <property name="apple">
+            <ref bean="apple"/>
+        </property>
+    </bean>
+
+    <bean id="apple" class="com.dge1992.spring.ioc.part6.AppleFactory" factory-method="getInstance"/>
+
+    <!-- 静态工厂方法 -->
+    <bean id="fruitStore2" class="com.dge1992.spring.ioc.part6.FruitStore">
+        <property name="apple">
+            <ref bean="apple2"/>
+        </property>
+    </bean>
+
+    <bean id="apple2" class="com.dge1992.spring.ioc.part6.Apple2Factory" factory-method="getInstance">
+        <constructor-arg>
+            <value>红富士</value>
+        </constructor-arg>
+    </bean>
+
+    <!-- 非静态工厂方法 -->
+    <bean id="fruitStore3" class="com.dge1992.spring.ioc.part6.FruitStore">
+        <property name="orange">
+            <ref bean="orange"/>
+        </property>
+    </bean>
+
+    <bean id="orangeFactory" class="com.dge1992.spring.ioc.part6.OrangeFactory"/>
+
+    <bean id="orange" factory-bean="orangeFactory" factory-method="getInstance"/>
+
+    <!-- 自定义FactoryBean -->
+    <bean id="fruitStore4" class="com.dge1992.spring.ioc.part6.FruitStore">
+        <property name="pear">
+            <ref bean="pear"/>
+        </property>
+    </bean>
+
+    <bean id="pear" class="com.dge1992.spring.ioc.part6.PearFactoryBean"/>
+</beans>

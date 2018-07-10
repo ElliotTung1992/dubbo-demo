@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person" class="com.dge1992.spring.ioc.part3.Person">
+        <property name="name" value="范丞丞"/>
+        <property name="dog" ref="dog"/>
+    </bean>
+
+    <bean id="dog" class="com.dge1992.spring.ioc.part3.Dog">
+        <constructor-arg index="0" value="旺财"/>
+    </bean>
+</beans>
