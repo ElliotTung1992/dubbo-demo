@@ -1,0 +1,13 @@
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: dubbo-consumer
+  dubbo:
+    application:
+      name: dubbo-consumer
+    registry:
+      address: zookeeper://39.105.12.20:8999
+    scan: com.github.dge1992.dubboconsumer
