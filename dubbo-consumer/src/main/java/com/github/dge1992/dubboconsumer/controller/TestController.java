@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @Auther: 小眼睛带鱼
  * @Date: 2019/10/1 21:47
- * @Description:
+ * @Description: 服务消费这测试用例
  */
 @RestController
 public class TestController {

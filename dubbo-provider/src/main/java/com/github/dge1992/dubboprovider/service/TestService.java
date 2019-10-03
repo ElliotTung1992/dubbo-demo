@@ -1,9 +1,14 @@
 package com.github.dge1992.dubboprovider.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.github.dge1992.dubboapi.service.ITestService;
+import org.apache.dubbo.config.annotation.Service;
+import org.springframework.stereotype.Component;
 
+/**
+ * 服务生产者测试服务
+ */
 @Service
+@Component
 public class TestService implements ITestService {
 
     @Override
