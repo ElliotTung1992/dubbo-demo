@@ -8,11 +8,15 @@ import org.springframework.stereotype.Component;
  * 服务生产者测试服务
  */
 @Service
-@Component
 public class TestService implements ITestService {
 
     @Override
     public String sayHello(String name) {
+        try {
+            Thread.sleep(2500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return "hello  " + name;
     }
 }

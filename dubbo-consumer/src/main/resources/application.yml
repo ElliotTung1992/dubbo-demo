@@ -11,3 +11,8 @@ dubbo:
     name: dubbo-consumer
   registry:
     address: zookeeper://39.105.12.20:8999
+  monitor:
+    protocol: registry
+  consumer:
+    check: true # 是否开启服务启动检查
+    timeout: 2000 # 全局超时设置

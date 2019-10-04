@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @Reference
+    //设置单个接口超时
+    @Reference(timeout = 3000)
     private ITestService testService;
 
     @RequestMapping("/sayHello")

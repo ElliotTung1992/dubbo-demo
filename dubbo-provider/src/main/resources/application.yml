@@ -15,6 +15,8 @@ dubbo:
   protocol:
     name: dubbo # dubbo的RPC协议
     port: 20880 # dubbo的RPC端口
+  monitor:
+    protocol: registry
 
 
 
