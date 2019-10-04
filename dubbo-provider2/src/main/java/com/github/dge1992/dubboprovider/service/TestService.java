@@ -2,18 +2,16 @@ package com.github.dge1992.dubboprovider.service;
 
 import com.github.dge1992.dubboapi.service.ITestService;
 import org.apache.dubbo.config.annotation.Service;
-import org.springframework.stereotype.Component;
 
 /**
  * 服务生产者测试服务
  */
-@Component
 @Service
 public class TestService implements ITestService {
 
     @Override
     public String sayHello(String name) {
-        System.out.println("TestService1");
+        System.out.println("TestService2");
         try {
             Thread.sleep(2500);
         } catch (InterruptedException e) {
