@@ -22,5 +22,4 @@ public class TestController {
     public String sayHello(@RequestParam String name){
         return testService.sayHello(name);
     }
-
 }
