@@ -6,14 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e05712-c197-485b-b486-4f9066902c4d" name="Default" comment="dubbo重试次数">
-      <change afterPath="$PROJECT_DIR$/dubbo-api/src/main/java/com/github/dge1992/dubboapi/multiVersions/IMultiVersionsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/multiVersions/MultiVersionsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/multiVersions/MultiNewVersionsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/multiVersions/MultiOldVersionsService.java" afterDir="false" />
+    <list default="true" id="46e05712-c197-485b-b486-4f9066902c4d" name="Default" comment="dubbo多版本">
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/config/DubboConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/localStub/LocalStubController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/localStub/TestServiceStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/consumer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/config/DubboConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/DubboConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/DubboConsumerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/github/dge1992/dubboconsumer/DubboConsumerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/github/dge1992/dubboconsumer/DubboConsumerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/github/dge1992/dubboconsumer/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/github/dge1992/dubboconsumer/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/DubboProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/DubboProviderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/target/classes/com/github/dge1992/dubboprovider/DubboProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/target/classes/com/github/dge1992/dubboprovider/DubboProviderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-provider/target/classes/com/github/dge1992/dubboprovider/service/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/target/classes/com/github/dge1992/dubboprovider/service/TestService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dubbo-api/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,109 +54,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/github/dge1992/dubboapi/multiVersions/IMultiVersionsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/github/dge1992/dubboapi/service/ITestService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/DubboProviderApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/controller/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/resources/provider.xml">
+        <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/consumer.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/service/TestService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/multiVersions/MultiOldVersionsService.java">
+        <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/localStub/TestServiceStub.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="10" />
+            <state relative-caret-position="171">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/multiVersions/MultiNewVersionsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/multiVersions/MultiVersionsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,11 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part9/Father.java" />
-        <option value="$PROJECT_DIR$/spring/src/main/resources/ioc/part9/bean.xml" />
-        <option value="$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part9/Son.java" />
-        <option value="$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part9/BeanTest.java" />
-        <option value="$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part10/SingletonDemo.java" />
         <option value="$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part10/PrototypeDemo.java" />
         <option value="$PROJECT_DIR$/spring/src/main/resources/ioc/part10/scopeTest.xml" />
         <option value="$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part10/ScopeTest.java" />
@@ -226,8 +142,6 @@
         <option value="$PROJECT_DIR$/spring/src/main/resources/ioc/part14/BeanLifeTest.xml" />
         <option value="$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part14/BeanLifeTest.java" />
         <option value="$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part15/ResourceLoaderTest.java" />
-        <option value="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/DubboConsumerApplication.java" />
         <option value="$PROJECT_DIR$/dubbo-api/src/main/java/com/github/dge1992/dubboapi/service/ITestService.java" />
         <option value="$PROJECT_DIR$/dubbo-consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/dubbo-provider2/pom.xml" />
@@ -235,7 +149,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-provider2/src/main/java/com/github/dge1992/dubboprovider/DubboProvider2Application.java" />
         <option value="$PROJECT_DIR$/dubbo-provider2/src/main/java/com/github/dge1992/dubboprovider/service/TestService.java" />
-        <option value="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/DubboProviderApplication.java" />
         <option value="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/service/Test2Service.java" />
         <option value="$PROJECT_DIR$/dubbo-provider/src/main/resources/provider.xml" />
         <option value="$PROJECT_DIR$/dubbo-api/src/main/java/com/github/dge1992/dubboapi/multiVersions/MultiVersionsService.java" />
@@ -244,9 +157,17 @@
         <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/multiVersions/IMultiVersionsService.java" />
         <option value="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/multiVersions/MultiOldVersionsService.java" />
         <option value="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/multiVersions/MultiNewVersionsService.java" />
-        <option value="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/service/TestService.java" />
         <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/multiVersions/MultiVersionsController.java" />
+        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/localStub/LocalStubController.java" />
+        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/config/DubboConfig.java" />
+        <option value="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/service/TestService.java" />
+        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/DubboConsumerApplication.java" />
+        <option value="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/DubboProviderApplication.java" />
+        <option value="$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/config/DubboConfig.java" />
         <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/resources/consumer.xml" />
+        <option value="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/localStub/TestServiceStub.java" />
       </list>
     </option>
   </component>
@@ -281,8 +202,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="785" />
-    <option name="y" value="59" />
+    <option name="x" value="708" />
+    <option name="y" value="23" />
     <option name="width" value="1613" />
     <option name="height" value="922" />
   </component>
@@ -297,6 +218,95 @@
             <path>
               <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="dge1992" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="dge1992" type="462c0819:PsiDirectoryNode" />
+              <item name="dubboconsumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="github" type="462c0819:PsiDirectoryNode" />
+              <item name="dge1992" type="462c0819:PsiDirectoryNode" />
+              <item name="dubboconsumer" type="462c0819:PsiDirectoryNode" />
+              <item name="localStub" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dubbo-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dubbo-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -314,7 +324,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo-provider2/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo-consumer/src/main/resources" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -337,11 +347,11 @@
       <recent name="dge1992.spring.ioc.beanFactory.method" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dubbo-consumer/src/main/resources" />
       <recent name="$PROJECT_DIR$/dubbo-provider2/src/main/java" />
       <recent name="$PROJECT_DIR$/dubbo-provider2/src/main/resources" />
       <recent name="E:\gitHub\framework\spring\src\main\resources\ioc\part15" />
       <recent name="E:\gitHub\framework\spring\src\main\resources\ioc\part13" />
-      <recent name="E:\gitHub\framework\spring\src\main\resources\ioc\part3" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -698,7 +708,7 @@
       <workItem from="1531274253037" duration="4791000" />
       <workItem from="1570110308785" duration="1888000" />
       <workItem from="1570157442798" duration="3006000" />
-      <workItem from="1570184823355" duration="9288000" />
+      <workItem from="1570184823355" duration="22425000" />
     </task>
     <task id="LOCAL-00001" summary="修改用户名测试">
       <created>1570110496030</created>
@@ -728,14 +738,22 @@
       <option name="project" value="LOCAL" />
       <updated>1570199303372</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dubbo多版本">
+      <created>1570244628145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570244628145</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117147000" />
+    <option name="totallyTimeSpent" value="130284000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="785" y="59" width="1613" height="922" extended-state="0" />
+    <frame x="708" y="23" width="1613" height="922" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -743,7 +761,7 @@
       <window_info id="Web" order="3" side_tool="true" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2170592" />
+      <window_info content_ui="combo" id="Project" order="6" weight="0.2170592" />
       <window_info id="Structure" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.32650602" />
@@ -755,7 +773,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="9" weight="0.32894737" />
-      <window_info anchor="bottom" id="Debug" order="10" visible="true" weight="0.29156625" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.40120482" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -782,7 +800,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2170592" />
       <window_info id="Structure" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" order="0" weight="0.32894737" />
+      <window_info anchor="bottom" id="Application Servers" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Messages" order="1" weight="0.32650602" />
       <window_info anchor="bottom" id="Java Enterprise" order="2" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
@@ -792,7 +810,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="9" weight="0.32894737" />
-      <window_info anchor="bottom" id="Debug" order="10" visible="true" weight="0.5710843" />
+      <window_info anchor="bottom" id="Debug" order="10" visible="true" weight="0.40120482" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -819,17 +837,10 @@
     <MESSAGE value="dubbo常用配置使用" />
     <MESSAGE value="测试" />
     <MESSAGE value="dubbo重试次数" />
-    <option name="LAST_COMMIT_MESSAGE" value="dubbo重试次数" />
+    <MESSAGE value="dubbo多版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="dubbo多版本" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part6/Pear.java" />
-    <entry file="file://$PROJECT_DIR$/spring/src/main/resources/ioc/part13/spiderMan.properties" />
-    <entry file="file://$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part13/SpiderMan.java" />
-    <entry file="file://$PROJECT_DIR$/spring/src/main/resources/ioc/part13/spiderMan2.properties" />
-    <entry file="file://$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part13/DatePropertyEditor.java" />
-    <entry file="file://$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part13/DateFoo.java" />
-    <entry file="file://$PROJECT_DIR$/spring/src/main/resources/ioc/part13/beanFactoryPostProcessorTest.xml" />
-    <entry file="file://$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part13/BeanFactoryPostProcessorTest.java" />
     <entry file="file://$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part10/SingletonDemo.java" />
     <entry file="file://$PROJECT_DIR$/spring/src/main/java/com/dge1992/spring/ioc/part14/TestBeanPostProcesser.java" />
     <entry file="file://$PROJECT_DIR$/spring/src/main/resources/ioc/part14/BeanLifeTest.xml" />
@@ -855,13 +866,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-api/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="52" column="21" selection-start-line="21" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-provider2/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -895,13 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1789">
           <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/DubboConsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -957,13 +954,6 @@
     <entry file="file://$PROJECT_DIR$/dubbo-governance.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/service/Test2Service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -981,68 +971,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/DubboProviderApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/github/dge1992/dubboapi/multiVersions/IMultiVersionsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/multiVersions/MultiVersionsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/github/dge1992/dubboapi/service/ITestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/resources/provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/service/TestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1066,6 +998,161 @@
             <element signature="imports" expanded="true" />
             <element signature="e#247#248#0" expanded="true" />
             <element signature="e#274#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/multiVersions/MultiVersionsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/localStub/LocalStubController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.3/dubbo-2.7.3.jar!/org/apache/dubbo/config/ServiceConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="891" column="54" selection-start-line="891" selection-start-column="42" selection-end-line="891" selection-end-column="54" />
+          <folding>
+            <element signature="e#36329#36330#0" expanded="true" />
+            <element signature="e#36367#36368#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.3/dubbo-2.7.3.jar!/org/apache/dubbo/config/spring/context/annotation/DubboComponentScan.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/dubbo/dubbo/2.7.3/dubbo-2.7.3.jar!/org/apache/dubbo/config/spring/context/annotation/EnableDubbo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/resources/provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1263">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-api/src/main/java/com/github/dge1992/dubboapi/service/ITestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/DubboProviderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/config/DubboConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-provider/src/main/java/com/github/dge1992/dubboprovider/service/TestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/config/DubboConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/DubboConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/resources/consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/github/dge1992/dubboconsumer/localStub/TestServiceStub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
           </folding>
         </state>
       </provider>

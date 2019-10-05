@@ -15,7 +15,7 @@ public class TestService implements ITestService {
     public String sayHello(String name) {
         System.out.println("TestService1");
         try {
-            Thread.sleep(2500);
+            Thread.sleep(3500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
