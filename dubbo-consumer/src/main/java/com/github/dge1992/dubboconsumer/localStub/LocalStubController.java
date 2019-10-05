@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LocalStubController {
 
-    @Reference
+    @Reference(stub = "com.github.dge1992.dubboconsumer.localStub.TestServiceStub")
     private ITestService testService;
 
     @RequestMapping("/testLocalStub")
