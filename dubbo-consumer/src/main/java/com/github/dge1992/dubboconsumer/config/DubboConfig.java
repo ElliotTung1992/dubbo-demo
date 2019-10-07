@@ -4,7 +4,6 @@ import com.github.dge1992.dubboapi.service.ITestService;
 import com.github.dge1992.dubboconsumer.localStub.TestServiceStub;
 import org.apache.dubbo.config.ServiceConfig;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 //@Configuration
 public class DubboConfig {

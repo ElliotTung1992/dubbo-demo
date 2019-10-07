@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/dubbo-demo.iml" filepath="$PROJECT_DIR$/.idea/dubbo-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-provider2/dubbo-provider2.iml" filepath="$PROJECT_DIR$/dubbo-provider2/dubbo-provider2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
     </modules>
   </component>
 </project>
