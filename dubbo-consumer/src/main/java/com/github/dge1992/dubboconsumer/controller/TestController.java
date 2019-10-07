@@ -16,7 +16,7 @@ public class TestController {
 
     //设置单个接口超时,以及对接口的重试次数，默认是2
     //接口重试涉及到接口的幂等性(幂等[删，改，查][可以重试]和非幂等[增][不应该重试])
-    @Reference(timeout = 2000, retries = 3)
+    @Reference(loadbalance = "roundrobin")//权重轮训
 //    @Reference(url = "dubbo://localhost:20880") //dubbo直连
     private ITestService testService;
 
