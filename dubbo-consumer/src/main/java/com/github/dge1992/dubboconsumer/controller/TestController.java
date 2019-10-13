@@ -1,6 +1,8 @@
 package com.github.dge1992.dubboconsumer.controller;
 
 import com.github.dge1992.dubboapi.service.ITestService;
+import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2019/10/1 21:47
  * @Description: 服务消费这测试用例,以及测试重试次数
  */
+@Log
 @RestController
 public class TestController {
 
@@ -22,6 +25,7 @@ public class TestController {
 
     @RequestMapping("/sayHello")
     public String sayHello(@RequestParam String name){
+        log.warning("consumer sayHello!");
         return testService.sayHello(name);
     }
 }
