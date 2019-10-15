@@ -2,8 +2,8 @@ package com.github.dge1992.dubboconsumer.controller;
 
 import com.github.dge1992.dubboapi.service.ITestService;
 import lombok.extern.java.Log;
-import lombok.extern.log4j.Log4j;
 import org.apache.dubbo.config.annotation.Reference;
+import org.slf4j.MDC;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,6 +25,8 @@ public class TestController {
 
     @RequestMapping("/sayHello")
     public String sayHello(@RequestParam String name){
+        log.info(MDC.get("traceId"));
+        //int i = 1 / 0;
         log.warning("consumer sayHello!");
         return testService.sayHello(name);
     }

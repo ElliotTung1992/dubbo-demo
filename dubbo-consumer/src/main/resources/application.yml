@@ -16,3 +16,8 @@ dubbo:
   consumer:
     check: true # 是否开启服务启动检查
     timeout: 2000 # 全局超时设置
+    filter: consumerFilter
+
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{traceId}] [%thread] %-5level %logger{50} - %msg%n'
